@@ -2,7 +2,7 @@
     border: 2px solid lightseagreen;
     height: 100px;
     border-radius: 20px;
-    width: 75vw;
+    width: 70vw;
 }
 
 #input {
@@ -15,12 +15,15 @@
     border: 2px solid lightseagreen;
     border-radius: 10px;
     width: 25vw;
+    position: absolute;
+    right: 0;
+    top: 75px;
 }
 
 #poll-container {
     border: 1px solid grey;
     border-radius: 10px;
-    width: 90vw;
+    width: 70vw;
 }
 
 #image {
@@ -39,4 +42,54 @@ header{
     font-weight: bold;
     font-size: 1.5rem;
     color: rgb(28, 185, 62);
+}
+
+.option {
+    border: 1px solid rgb(28, 184, 36);
+    margin: 2px;
+    border-radius: 10px;
+}
+
+#btnAsk {
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(28, 184, 36);
+    width: 50px;
+    height: 35px;
+}
+
+#btnAsk:hover {
+    cursor: pointer;
+    background-color: rgb(27, 146, 33);
+    color: aliceblue;
+}
+
+@media screen and (max-width: 600px) {
+    #q-box {
+        border: 2px solid lightseagreen;
+        height: 100px;
+        border-radius: 20px;
+        width: 68vw;
+    }
+    
+    #input {
+        border-radius: 10px;
+        border: 1px solid gray;
+        width: 50vw;
+    }
+    
+    #categories {
+        border: 2px solid lightseagreen;
+        border-radius: 10px;
+        width: 25vw;
+        position: absolute;
+        right: 0;
+        top: 75px;
+    }
+    
+    #poll-container {
+        border: 1px solid grey;
+        border-radius: 10px;
+        width: 68vw;
+    }
 }
