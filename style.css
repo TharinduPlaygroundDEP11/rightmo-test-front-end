@@ -1,0 +1,17 @@
+#q-box {
+    border: 2px solid lightseagreen;
+    height: 100px;
+    border-radius: 20px;
+}
+
+#input {
+    border-radius: 10px;
+    border: 1px solid gray;
+    width: auto;
+}
+
+#categories {
+    border: 2px solid lightseagreen;
+    border-radius: 10px;
+    width: 200px;
+}
