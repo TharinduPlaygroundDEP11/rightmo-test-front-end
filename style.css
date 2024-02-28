@@ -39,6 +39,9 @@ header{
     border-bottom: 1px solid grey;
     margin: 10px;
     padding: 10px;
+}
+
+#header-text {
     font-weight: bold;
     font-size: 1.5rem;
     color: rgb(28, 185, 62);
@@ -62,6 +65,11 @@ header{
     cursor: pointer;
     background-color: rgb(27, 146, 33);
     color: aliceblue;
+}
+
+.header-btn:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 600px) {
@@ -91,5 +99,10 @@ header{
         border: 1px solid grey;
         border-radius: 10px;
         width: 68vw;
+    }
+
+    .btn {
+        padding: 3px;
+        margin-left: 5px;
     }
 }
