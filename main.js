@@ -31,7 +31,7 @@ function loadAllCategories() {
 
 btnAskElm.addEventListener('click', () => {
     const text = inputElm.value.trim();
-    if (text.trim().length === 0) {
+    if (text.length === 0) {
         inputElm.focus();
         inputElm.select();
         return;
