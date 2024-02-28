@@ -3,7 +3,6 @@ const API_URL = "http://localhost:8080/api"
 const categoryContainerElm = document.querySelector('#categories');
 const btnAskElm = document.getElementById('btnAsk');
 const inputElm = document.getElementById('input');
-const chkboxElm = document.getElementById('chkbox');
 
 loadAllCategories();
 
@@ -15,7 +14,7 @@ function loadAllCategories() {
                     const newLiElm = document.createElement('li');
                     categoryContainerElm.append(newLiElm);
                     newLiElm.innerHTML = `<div class="flex-grow-1 d-flex gap-1 align-items-center">
-                    <input id="chkbox" class="form-check-input" type="checkbox" value="${category}">
+                    <input id="chkbox" class="form-check-input" type="checkbox">
                     <label class="flex-grow-1">${category}</label>
                 </div>`;
                 })
