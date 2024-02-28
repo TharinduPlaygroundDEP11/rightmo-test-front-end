@@ -11,7 +11,10 @@ function loadAllCategories() {
                 list.forEach(category => {
                     const newLiElm = document.createElement('li');
                     categoryContainerElm.append(newLiElm);
-                    newLiElm.innerHTML = `${category}`;
+                    newLiElm.innerHTML = `<div class="flex-grow-1 d-flex gap-1 align-items-center">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="flex-grow-1">${category}</label>
+                </div>`;
                 })
                 );
         } else {

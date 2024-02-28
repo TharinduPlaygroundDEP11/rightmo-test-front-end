@@ -1,5 +1,5 @@
 #q-box {
-    border: 2px solid lightseagreen;
+    border: 1px solid rgb(95, 221, 215);
     height: 100px;
     border-radius: 20px;
     width: 70vw;
@@ -12,7 +12,7 @@
 }
 
 #categories {
-    border: 2px solid lightseagreen;
+    border: 1px solid rgb(95, 221, 215);
     border-radius: 10px;
     width: 25vw;
     position: absolute;
@@ -21,18 +21,23 @@
 }
 
 #poll-container {
-    border: 1px solid grey;
+    border: 2px solid grey;
     border-radius: 10px;
     width: 70vw;
 }
 
 #image {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     background-image: url('assets/image-1.jpg');
     background-size: cover;
     background-position: center;
     margin: 10px;
+}
+
+#video {
+    width: 400px;
+    height: 350px;
 }
 
 header{
@@ -51,6 +56,11 @@ header{
     border: 1px solid rgb(28, 184, 36);
     margin: 2px;
     border-radius: 10px;
+}
+
+.option:hover {
+    background-color: rgb(76, 248, 119);
+    cursor: pointer;
 }
 
 #btnAsk {
@@ -72,37 +82,46 @@ header{
     text-decoration: underline;
 }
 
+#view-result:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 600px) {
     #q-box {
-        border: 2px solid lightseagreen;
-        height: 100px;
+        border: 1px solid rgb(95, 221, 215);
+        height: 140px;
         border-radius: 20px;
-        width: 68vw;
+        width: 60vw;
     }
     
     #input {
         border-radius: 10px;
         border: 1px solid gray;
-        width: 50vw;
+        width: 40vw;
     }
     
     #categories {
-        border: 2px solid lightseagreen;
+        border: 1px solid rgb(95, 221, 215);
         border-radius: 10px;
-        width: 25vw;
+        width: 35vw;
         position: absolute;
-        right: 0;
+        left: 62vw;
         top: 75px;
     }
     
     #poll-container {
         border: 1px solid grey;
         border-radius: 10px;
-        width: 68vw;
+        width: 60vw;
     }
 
     .btn {
         padding: 3px;
         margin-left: 5px;
+    }
+
+    ul {
+        list-style: none;
     }
 }
